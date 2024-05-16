@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Resources</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
+        .ascii-art {
+            white-space: pre;
+            font-size: 12px;
+            overflow-x: auto;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ascii-art {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Education Resources</h1>
+        <div class="ascii-art">
++----+        +---------------------+       +--------------------+
+|<a href="IDE_choice.html">IDEs</a>| ---->  |<a href="OOP.html">Programming Languages</a>| ----> |<a href="scientific_computing.html">Scientific computing</a>|
++====+        +=====================+       +====================+
+		      				       |
+						       |
+						       V
+     +-----------+           +------------+         +-----+
+     |<a href="other_stuff.html">Other stuff</a>|  <----    |<a href="great_papers.html">Great papers</a>|  <----  |<a href="AI_ML.html">AI/ML</a>|
+     +===========+           +============+         +=====+
+        </div>
+    </div>
+</body>
+</html>
