@@ -7,15 +7,23 @@
     <style>
         body {
             font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the container takes full height */
+            margin: 0; /* Remove default body margin */
+            overflow: hidden; /* Prevent scrollbars on the body */
         }
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
-            overflow-x: auto; /* Enable horizontal scrolling */
+            overflow: auto; /* Enable scrolling if needed */
         }
         .ascii-art-wrapper {
+            display: flex;
+            justify-content: center;
             width: 100%;
             overflow-x: auto; /* Enable horizontal scrolling */
         }
