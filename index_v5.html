@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +7,33 @@
     <style>
         body {
             font-family: monospace;
+            margin: 0; /* Remove default body margin */
         }
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow: auto; /* Enable scrolling if needed */
+        }
+        .ascii-art-wrapper {
+            width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling */
         }
         .ascii-art {
             white-space: pre;
             font-size: 12px;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .ascii-art {
+                font-size: 10px;
+            }
         }
     </style>
 </head>
@@ -26,26 +43,26 @@
         <p>I have a list of education resources I like. I also have a list of my publications.</p>
         
         <h1 id="education-resources">Education Resources</h1>
-        <pre class="ascii-art">
-
+        <div class="ascii-art-wrapper">
+            <pre class="ascii-art">
 +----------------------------------+         +---------------------------------+         +---------------------------------+
 |             <a href="IDE_choice.html">Choosing</a>             |         |            <a href="OOP.html">Basics of</a>            |         |      <a href="scientific_computing.html">Scientific computing</a>       |
 |              <a href="IDE_choice.html">an IDE</a>              |         |        <a href="OOP.html">programming languages</a>    |         |           <a href="scientific_computing.html">packages</a>              |
 +==================================+ ---- >  +=================================+ ---- >  +=================================+
 |           VS Code, etc.          |         |  Python, MATLAB, Julia, etc.    |         | matplotlib, numpy, scipy, etc.  | 
 +----------------------------------+         +---------------------------------+         +---------------------------------+ 
-												         |
-													 |
-													 |
-													 V
+                                                 |
+                                                 |
+                                                 |
+                                                 V
 +----------------------------------+         +---------------------------------+         +---------------------------------+
 |              <a href="other_stuff.html">Other</a>               |         |          <a href="great_papers.html">Great papers</a>           |         |       <a href="AI_ML.html">Machine learning &</a>        |
 |              <a href="other_stuff.html">stuff</a>               |         |                                 |         |     <a href="AI_ML.html">artificial intelligence</a>     |
 +==================================+ < ----  +=================================+ < ----  +=================================+
 |Productivity, HPC, CLI, deployment|         |                                 |         |General, types, math fundamentals|
 +----------------------------------+         +---------------------------------+         +---------------------------------+ 
-
-        </pre>
+            </pre>
+        </div>
         
         <h1 id="publications">Publications</h1>
         <p>If you'd like a copy of any of my publications, send me an email.</p>
@@ -54,7 +71,6 @@
         <p><a href="https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=osu1679258588528361">2023 MS Thesis - Assessment of Multi-Fidelity Surrogate Methods for Expedient Loads Prediction in High-Speed Flows</a></p>
         <p><a href="https://doi.org/10.2514/6.2023-3844">2023 AIAA Aviation Conference Paper - Assessment of Multi-Fidelity Surrogate Approaches for Expedient Loads Prediction in High-Speed Flows</a></p>
         <p><a href="index_v4.html">Index round 4!!</a></p>
-        <p><a href="index_v5.html">Index round 5!!</a></p>
         
         <h2>In Peer Review</h2>
         <p>Assessment of Multi-Fidelity Surrogate Approaches for Expedient Loads Prediction in High-Speed Flows, Journal of Spacecraft and Rockets</p>
